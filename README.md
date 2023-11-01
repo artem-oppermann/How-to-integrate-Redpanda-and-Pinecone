@@ -1,1 +1,2 @@
-# How-to-integrate-Redpanda-and-Pinecone
+# How to integrate Redpanda and Pinecone
+
