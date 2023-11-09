@@ -41,8 +41,6 @@ def consume_and_index_data(consumer, topic_name):
     finally:
         # Close down consumer to commit final offsets.
         consumer.close()
-        # Deinitialize Pinecone
-        #pinecone.deinit()
 
 def pinecone_index(vector_id, vector):
     with pinecone.Index(index_name="fraud-detection") as index:
