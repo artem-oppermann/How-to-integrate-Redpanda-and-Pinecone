@@ -3,7 +3,7 @@ from confluent_kafka import Consumer, KafkaError
 import pinecone
 
 # Initialize Pinecone
-pinecone.init(api_key="<YOUR PINECONE APIKEY>", environment="<YOUR PINECONE ENVIRONMENT>")
+pinecone.init(api_key="<YOUR PINECONE API KEY>", environment="<YOUR PINECONE ENVIRONMENT>")
 
 def create_consumer():
     conf = {
