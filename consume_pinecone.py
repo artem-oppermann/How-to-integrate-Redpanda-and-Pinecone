@@ -39,7 +39,7 @@ def consume_and_index_data(consumer, topic_name):
     except KeyboardInterrupt:
         pass
     finally:
-        # Close down consumer to commit final offsets.
+        # Close down consumer to commit final offsets
         consumer.close()
 
 def pinecone_index(vector_id, vector):
