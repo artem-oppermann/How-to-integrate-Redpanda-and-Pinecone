@@ -2,7 +2,7 @@
 export PINECONE_ENVIRONMENT='your-environment'
 export PINECONE_API_KEY='your-api-key'
 
-# Getting the project ID
+# Get the project ID
 PINECONE_PROJECT_ID=$(
   curl "https://controller.$PINECONE_ENVIRONMENT.pinecone.io/actions/whoami" \
     -H "Api-Key: $PINECONE_API_KEY" | jq -r '.project_name'
