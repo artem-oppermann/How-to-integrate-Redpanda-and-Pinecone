@@ -9,12 +9,11 @@ def delivery_report(err, msg):
 
 def produce_data(file_path, topic_name):
     # Create a Producer instance
-    #conf = {'bootstrap.servers': '0.0.0.0:9092'}  # Replace with your Redpanda server address
     conf = {
-    'bootstrap.servers': 'localhost:19092',
+    'bootstrap.servers': 'localhost:19092',  # Replace with your Redpanda server address
     'queue.buffering.max.messages': 1000000,
     'queue.buffering.max.kbytes': 500000
-}
+    }
     producer = Producer(conf)
 
     # Open the CSV file
